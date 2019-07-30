@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:weightSum="1.0">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="0.6"
+        android:buttonTint="@color/colorPrimary"
+        android:checked="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="CheckBox"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.2"
+        android:background="@drawable/fieldground"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:padding="8dp"
+        android:text="0" />
+
+    <Spinner
+        android:id="@+id/type"
+        style="@style/Widget.AppCompat.Spinner.DropDown"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/fieldground"
+        android:entries="@array/type"
+        android:padding="8dp" />
+
+    <!--
+
+        <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:focusable="false"
+        android:layout_marginTop="7dp"
+        android:textSize="15dp"
+        android:layout_weight="0.1"
+        android:focusableInTouchMode="false" />
+        -->
+
+
+</LinearLayout>

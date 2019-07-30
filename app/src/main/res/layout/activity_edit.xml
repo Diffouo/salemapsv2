@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitecass"
+    tools:context="cm.pade.formapps.MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawerLayout"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Nom Complet ou Raison sociale"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView1" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:inputType="text"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="EX : Jean Calvin ou ALIMENTATION KING"
+                    android:padding="20dp"
+                    android:background="@drawable/arrondi"
+                    android:id="@+id/editText1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse ou Localisation"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView2" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:hint="EX : Face station Total, Carrefour 2 eglises. AKWA - Douala"
+                    android:padding="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrondi"
+                    android:id="@+id/editText2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Numero de telephone"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView3" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:hint="EX : 671985980"
+                    android:padding="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrondi"
+                    android:id="@+id/editText3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse email"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView4" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:hint="EX : test@monsite.com"
+                    android:padding="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrondi"
+                    android:id="@+id/editText4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Type de client"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView16" />
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:spinnerMode="dropdown"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_height="60dp"
+                    android:background="@drawable/arrondi"
+                    android:id="@+id/spinner" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="Xlocation (Latitude)"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView17" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:inputType="none"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:padding="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrondi"
+                    android:id="@+id/editText5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="YLocation (Longitude)"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView18" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:inputType="none"
+                    android:ems="10"
+                    android:padding="20dp"
+                    android:enabled="false"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrondi"
+                    android:id="@+id/editText6" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:text="SYNCHRONISER"
+                    android:padding="10dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/button"
+                    android:background="@drawable/arrondibt"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center" />
+
+                  <Button
+             android:layout_width="0dp"
+             android:layout_weight="0.4"
+             android:layout_height="60dp"
+             android:text="SUPPRIMER"
+             android:padding="10dp"
+             android:layout_marginTop="10dp"
+                      android:layout_marginBottom="10dp"
+             android:gravity="center"
+             android:id="@+id/button2"
+             android:background="@drawable/arrondibt"
+             android:textColor="@color/white"
+             android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- navigation drawer -->
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:divider="#eee"
+            android:layout_gravity="left"
+            android:background="#fff"
+            android:dividerHeight="1dp" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:weightSum="1.0">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="0.5"
+        android:buttonTint="@color/colorPrimary"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="CheckBox"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.15"
+        android:background="@drawable/fieldground"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/fieldground"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/type"
+        style="@style/Widget.AppCompat.Spinner.DropDown"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.15"
+        android:background="@drawable/fieldground"
+        android:entries="@array/type"
+        android:gravity="center_vertical"
+        android:spinnerMode="dropdown" />
+
+
+</LinearLayout>

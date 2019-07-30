@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">SmartMarket</string>
+    <string name="ilogin">Connexion</string>
+    <string name="iemail">Utilisateur</string>
+    <string name="ipwd">Mot de passe</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="spinner_array">
+        <item>Choisissez le Type de Client</item>
+        <item>Boutique</item>
+        <item>Tablier</item>
+        <item>Kiosque</item>
+        <item>SuperMarche</item>
+        <item>Station Service</item>
+        <item>SUPERETTE</item>
+    </string-array>
+
+    <string-array name="spinner_qte">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Unite</item>
+        <item>Carton</item>
+    </string-array>
+
+</resources>

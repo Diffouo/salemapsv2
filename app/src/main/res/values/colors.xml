@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a148f</color>
+    <color name="colorAccent">#7f0000</color>
+    <color name="colorPrimaryDark">#38006b</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+
+    <color name="colorSecondary">#880e4f</color>
+    <color name="colorSecondaryLightColor">#bc477b</color>
+    <color name="colorSecondaryDark">#560027</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="hintTextColot">#aaa</color>
+    <color name="whitecass">#f0f0f0</color>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitecass"
+    tools:context="cm.pade.formapps.MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawerLayout"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fieldground"
+                android:drawableEnd="@drawable/ic_home"
+                android:ems="10"
+                android:hint="Nom Complet ou Raison Sociale"
+                android:inputType="text"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fieldground"
+                android:drawableEnd="@drawable/ic_location"
+                android:ems="10"
+                android:hint="Adresse ou Localisation"
+                android:inputType="textMultiLine"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fieldground"
+                android:drawableEnd="@drawable/ic_phone"
+                android:ems="10"
+                android:hint="Numero de telephone"
+                android:inputType="phone"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fieldground"
+                android:drawableEnd="@drawable/ic_mail_outline"
+                android:ems="10"
+                android:hint="Adresse email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Type de client"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+            <Spinner
+                android:id="@+id/spinTypeCusto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/fieldground"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fieldground"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Xlocation (Latitude )"
+                android:inputType="none"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fieldground"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="YLocation (Longitude)"
+                android:inputType="none"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/hintTextColot"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Reinitialiser"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="Enregistrer"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <!-- <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="ENREGISTRER LE FORMULAIRE"
+                android:gravity="center_horizontal|center_vertical"
+                android:id="@+id/button"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/arrondibt"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal" /> -->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+        <!-- navigation drawer -->
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:divider="#eee"
+            android:layout_gravity="left"
+            android:background="#fff"
+            android:dividerHeight="1dp" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

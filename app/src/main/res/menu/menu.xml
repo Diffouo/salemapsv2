@@ -1,0 +1,12 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_setting"
+        android:icon="@drawable/abc_list_selector_holo_dark"
+        android:title="Parametres" />
+
+    <item android:id="@+id/action_about"
+        android:icon="@drawable/abc_list_selector_holo_dark"
+        android:title="A propos" />
+
+</menu>

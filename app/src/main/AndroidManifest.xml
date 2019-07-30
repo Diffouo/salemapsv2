@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cm.pade.formapps">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_ico"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".SynchroActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".HomeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".EditActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".OkFoodsActivity"></activity>
+        <activity android:name=".NokFoodActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".ProspectionActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".CmdActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".DistributeurActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".RecouvrementActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Recouvrement2Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".LivraisonActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".ActivityInventaire" android:screenOrientation="portrait"></activity>
+        <activity android:name=".UpdateActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".AboutActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".SplashActivity" android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
