@@ -1,5 +1,5 @@
 # salemapsv2
 Application Android pour l'activité commerciale chez OKFOODS
 
-#IDE
+# IDE
 Ouvrir le projet avec Android Studio
